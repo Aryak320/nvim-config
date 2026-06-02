@@ -5,7 +5,7 @@ return {
   --     -- load the dayfox variant
   --     require("nightfox").setup({
   --       options = {
-  --         transparent = true,
+  --         transparent = false,
   --       },
   --     })
   --     -- make the insert-mode cursor a black vertical line
@@ -142,7 +142,6 @@ return {
           settings = {
             texlab = {
               diagnostics = {
-                { virtual_text = false },
                 ignoredPatterns = {
                   -- Rust regexes. Match the diagnostic text you want to suppress.
                   [[Underfull \\hbox.*]],
